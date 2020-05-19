@@ -1,0 +1,29 @@
+
+body {
+    background-color: #413c3b;
+}
+
+.cadre {
+    width: 700px;
+    height: 500px;
+    background-color: brown;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cadre__quote {
+    color: white;
+    font-size: 35px;
+    padding: 3%;
+}
+
+.cadre__btn {
+    position: absolute;
+    left: 90%;
+    top: 85%;
+    transform: translate(-50%, 50%);
+    width: 100px;
+    height: 40px;
+    border-radius: 0.4em;
+    border: 0;
+}
