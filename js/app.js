@@ -18,15 +18,6 @@ let quotes =
     "Si Chuck Norris attaque l'Empire, l'Empire ne contre attaque pas."
 ];
 
-let color = 
-[
-    "blue",
-    "red",
-    "yellow",
-    "purple",
-    "green"
-];
-
 let body = document.querySelector("body");
 let cadre = document.querySelector(".cadre");
 let quoteText = document.querySelector(".cadre__quote");
@@ -36,11 +27,14 @@ btn.addEventListener("click",magic);
 
 function magic() {
     let indexQuote = Math.floor(Math.random()*quotes.length);
-    let indexColor = Math.floor(Math.random()*color.length);
 
-    body.style.backgroundColor = color[indexColor];
-    btn.style.backgroundColor = color[indexColor];
-    quoteText.style.color = color[indexColor];
+    let colorR = Math.floor(Math.random()*256);
+    let colorG = Math.floor(Math.random()*256);
+    let colorB = Math.floor(Math.random()*256);
+
+    body.style.backgroundColor = `rgb(${colorR},${colorG}, ${colorB})`;
+    btn.style.backgroundColor = `rgb(${colorR},${colorG}, ${colorB})`;
+    quoteText.style.color = `rgb(${colorR},${colorG}, ${colorB})`;
     
     quoteText.textContent = quotes[indexQuote];
 }

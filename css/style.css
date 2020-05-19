@@ -6,19 +6,22 @@ body {
 .cadre {
     width: 700px;
     height: 500px;
-    background-color: brown;
+    background-color: white;
     margin: 0 auto;
     position: relative;
 }
 
 .cadre__quote {
     color: white;
-    font-size: 35px;
+    font-size: 38px;
     padding: 3%;
+    color: #413c3b;
 }
 
 .cadre__btn {
     position: absolute;
+    color: white;
+    background-color: #413c3b;
     left: 90%;
     top: 85%;
     transform: translate(-50%, 50%);
