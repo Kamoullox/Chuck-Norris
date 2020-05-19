@@ -9,12 +9,13 @@ body {
     background-color: white;
     margin: 0 auto;
     position: relative;
+    text-align: center;
 }
 
 .cadre__quote {
     color: white;
     font-size: 38px;
-    padding: 3%;
+    padding: 5%;
     color: #413c3b;
 }
 
